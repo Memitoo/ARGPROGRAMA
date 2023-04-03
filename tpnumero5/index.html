@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarea5</title>
+</head>
+<body>
+    
+    <form>
+        <label for="dolares">Dólares:</label>
+        <input type="number" id="dolares" name="dolares">
+        <br><br>
+        <label for="pesos">Pesos:</label>
+        <input type="number" id="pesos" name="pesos" readonly>
+        <br><br>
+        <button type="button" onclick="convertirDolares()">Convertir</button>
+      
+      </form>
+
+      <br><br>
+
+      <form>
+        <label for="pesos1">Pesos:</label>
+        <input type="number" id="pesos-input" name="pesos1">
+        <br><br>
+        <label for="dolares1">Dólares:</label>
+        <input type="number" id="dolares-input" name="dolares1" readonly>
+        <br><br>
+        <button type="button" onclick="convertir()">Convertir</button>
+      </form>
+
+      <br><br>
+
+      <form>
+        <label for="celsius">Grados Celsius:</label>
+        <input type="number" id="celsius-input" name="celsius">
+        <br><br>
+        <label for="fahrenheit">Grados Fahrenheit:</label>
+        <input type="number" id="fahrenheit-output" name="fahrenheit" readonly>
+        <br><br>
+        <button type="button" onclick="convertirGrados()">Convertir</button>
+      </form>
+
+      <br><br>
+
+        <label for="cliente"> Nombre del cliente:</label>
+        <input type="text" id="nombre-cliente" name="cliente">
+        <br><br>
+        <label for="Caja">Material de la caja:</label>
+        <input type="checkbox" id="caja-material" name="Caja" value="madera" value="carton">
+
+        <br><br>
+
+
+        <br><br>
+
+        <form>
+            <label for="numero">Introduzca un número entre 0 y 5:</label>
+            <input type="number" id="numero-input" name="numero">
+            <br><br>
+            <button type="button" onclick="adivinarNumero()">adivinar</button>
+            <br><br>
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado-output" name="resultado" readonly>
+          </form>
+
+          <br><br>
+
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <button type="button" id="agregar">Agregar</button>
+          </form>
+
+          <ul id="lista-nombres"></ul>
+
+          <form>
+            <label for="NombreCliente">Nombre del cliente:</label>
+            <br>
+            <input type="text" nombre="NombreCliente" id="nombre_cliente">
+        </form>
+            
+        <br>
+    
+        </form>
+        <label for="caja">Material de la caja:</label>
+        <input list = "materiales" name ="caja" id ="caja_Material">
+        <datalist id="materiales">
+            <option value="madera"></option>
+            <option value="carton"></option>
+            <option value="plastico"></option>
+        </datalist>
+        </form>
+    
+        <br> <br> 
+        
+    
+        </form>
+            <label>Seleccione una dimension para la caja:</label>
+            
+            <br>
+    
+            <input id="chica" type="radio" name="tamanios" value="chica">
+            <label for="chica">Chica</label>
+            <br>
+            <input id="mediana" type="radio" name="tamanios" value="mediana">
+            <label for="mediana">Mediana</label>
+            <br>
+            <input id="grande" type="radio" name="tamanios" value="grande">
+            <label for="grande">Grande</label>
+        </form>
+    
+        <form>
+            <label for="comentarios">comentarios</label>
+            <br>
+            <input type="text" name="comentarios" id="inp_coment">
+        </form>
+    
+        <br>
+    
+        <form>
+            <button type="button" onclick="recolectarDatos()">Enviar</button>
+            <input type="text" name="datos" id="datofinal" readonly>
+        </form>
+
+
+<script src="main.js"></script>
+</body>
+</html>
